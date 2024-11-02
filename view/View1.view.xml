@@ -1,0 +1,49 @@
+<mvc:View controllerName="kanye.rest.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    	<Page
+        id="page"
+		titleLevel="H1"
+		class="sapUiContentPadding backgroundImage"
+		showNavButton="false"
+        title="{i18n>title}"
+        titleAlignment="Center">
+		<subHeader>
+		</subHeader>
+		<content>
+
+			<VBox
+				height="100%"
+				alignItems="Center"
+				justifyContent="Center">
+			    <Image class="backgroundImage sapUiSmallMarginTop" src="https://s2-quem.glbimg.com/K-yI9SyCb5HzQjx51LpbfU8azfI=/48x0:568x520/fit-in/636x520/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2022/c/p/mt8TzETbqajAy0gKKK2A/2021-01-07-kanye-west.jpeg" height="20rem" width="20rem" />
+       	    <GenericTile 
+                    size="XS"
+					header="{kanyeModel>/quotes}"
+					mode="LineMode"
+					class="sapUiTinyMarginBegin sapUiLargeMarginTop"
+                    subheader="- Kanye West"/>
+			</VBox>
+		</content>
+		<footer >
+			<Toolbar class="sapUiSmallMarginTop">
+				<FlexBox
+				width="99%"
+				alignItems="End"
+				justifyContent="End">
+		    <MessageStrip
+				text="Made with SAP UI5 ❤️"
+				type="Information"
+				showIcon="true"
+				class="sapUiSmallMarginTopBottom">
+				<link>
+			<Link text="See my other projects"
+						target="_blank"
+						href="https://github.com/rp-honorato"/>
+				</link>
+			</MessageStrip>
+			</FlexBox>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>
